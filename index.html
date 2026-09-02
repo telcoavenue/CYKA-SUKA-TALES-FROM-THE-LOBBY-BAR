@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYKA // SUKA: Tales from the Lobby Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #0b0b0b;
+            overflow-x: hidden;
+        }
+
+        /* Background Image with Dark Overlay for Readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('front_cover.jpg') no-repeat center center/cover;
+            filter: brightness(0.4) blur(4px);
+            transform: scale(1.05);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px 20px;
+            background: rgba(15, 15, 15, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .cover-preview {
+            width: 200px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: #f3f3f3;
+            text-transform: uppercase;
+        }
+
+        .description {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #d1d1d1;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .about-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-align: left;
+            border-left: 3px solid #e50914;
+            padding-left: 10px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #e50914;
+            color: #ffffff;
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .download-btn:hover {
+            background-color: #f40612;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 0.85rem;
+            color: #888888;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px 10px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="front_cover.jpg" alt="CYKA // SUKA Cover" class="cover-preview">
+
+        <h1>CYKA // SUKA: Tales from the Lobby Bar</h1>
+
+        <p class="description">
+            <strong>CYKA // SUKA: Tales from the Lobby Bar</strong> is an independent comic book inspired by early career days working as a barback in a coastal resort hotel in Cyprus. The narrative centers on the day-to-day working relationship between a barback and a bartender navigating a high-pressure hotel lobby bar during the intense summer season.
+        </p>
+
+        <div class="about-title">About the Title</div>
+        <p class="description">
+            The term <em>suka</em> (derived from the Russian <em>syka</em>) translates literally to "female dog". In Slavic colloquial usage, it serves as a sharp profanity that captures the raw, unfiltered stress, friction, and survival dynamics of high-volume seasonal hospitality.
+        </p>
+
+        <div class="about-title">Part of Oceania</div>
+        <p class="description">
+            This comic is part of a greater band of digital creations—spanning comics, art books, and ebooks—hosted under the umbrella of <strong>Oceania</strong>, the digital platform housing this entire collection of creative works.
+        </p>
+
+        <a href="syka_suka_tales_from_the_lobby_bar.pdf" class="download-btn" download>Download PDF Comic</a>
+
+        <div class="footer">
+            &copy; 2026 Constantinos Constantinou. Part of the Oceania collection.
+        </div>
+    </div>
+
+</body>
+</html>
